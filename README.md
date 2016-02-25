@@ -3,4 +3,4 @@ My first realization that I made for Waldek van Deurse (https://www.behance.net/
 
 I used Bootstrap, jQuery and Google Maps as extented librarys. I also used a "Isotope" to manage grid system in "projects" section.
 
-I still working on a RWD quality and some other issues, so I'll be updating this project soon.
+I am still working on a RWD quality and some other issues, so I'll be updating this project soon.
