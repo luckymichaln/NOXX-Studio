@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>NOXX STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <section class="main-banner col-md-12">
+                <img src="img/logo.png" alt="NOX STUDIO LOGO" />
+                <p class="big-txt">czym się zajmujemy?</p>
+                <button class="arrow-button">
+                    <a href="#production"><span class="arrow-left"></span></a>
+                    <a href="#production"><span class="arrow-right"></span></a>
+                </button>
+            </section>
+        </div>
+        <button id="hamburger">
+            <span></span> <span></span> <span></span>
+        </button>
+        <nav class="navigation col-md-6 col-sm-6 col-xs-12">
+            <ul class="menu-list big-txt">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">o nas</a></li>
+                <li><a href="#production">realizacje</a></li>
+                <li><a href="#clients">zaufali nam</a></li>
+                <li><a href="#contact">kontakt</a></li>
+                <li><a href="#">newsletter</a></li>
+            </ul>
+            <ul class="contact-list">
+                <li>
+                    <h6>NOXX Studio</h6>
+                    <p>ul. Staszica 25/26</p>
+                    <p>35-051 Rzeszów</p>
+                </li>
+                <li>
+                    <h6>Projekty graficzne</h6>
+                    <p>+48 669 422 670</p>
+                    <a href="mailto:projekty@noxx.pl?Subject=Pytanie%20o%20projekt" target="_top">projekty@noxx.pl</a>
+                </li>
+                <li>
+                    <h6>Filmy video</h6>
+                    <p>+48 795 870 718</p>
+                    <a href="mailto:video@noxx.pl?Subject=Pytanie%20o%20film" target="_top">video@noxx.pl</a>
+                </li>
+            </ul>
+            <ul class="social-list">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="container">
+            <section class="graphics">
+            <section class="main-graphics col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-offset-4 col-md-8">
+                    <div class="image-wrap"><img src="img/graphics-icon.png" alt="Graphics icon" /></div>
+                    <h1 class="big-txt">projektowanie graficzne</h1>
+                    <p>Specjalnością naszego studia jest nie tylko doświadczenie i wiedza w tym zakresie, ale również umiejętne podejścia do klienta i spełnienia jego wymagań.</p>
+                    <p>Śledząc najnowsze trendy staramy się nie tylko tworzyć nowoczesne rozwiązania projektowe ale staramy się również doradzać naszym klientom co może być dla nich najlepszym posunięciem w strategii wizualnego rozwoju.</p>
+                    <p>Bazujemy na doświadczeniu w obszarach projektowania identyfikacji wizualnych, stron internetowych, aplikacji mobilnych oraz wielu innych dziedzinach graficznych.</p>
+                    <div class="graphics-links">
+                        <img src="img/gift-icon-white.png" alt="Gift icon">
+                        <a class="big-txt" href="#production">realizacje</a>
+                    </div>
+                </div>
+            </section>
+            </section>
+            <section class="video">
+            <section class="main-video col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-8">
+                    <div class="image-wrap">
+                        <img src="img/video-icon.png" alt="Video icon" />
+                    </div>
+                    <h1 class="big-txt blue">profesjonalne studio video</h1>
+                    <p>Wideo potrafi być niezwykle skutecznym i potężnym narzędziem, pod warunkiem, że nada mu się odpowiedni wyraz.</p>
+                    <p>Zajmujemy się produkcją spotów reklamowych, teledysków, animacji 2D, filmujemy eventy, produkty, szkolenia i wiele więcej.</p>
+                    <p>Nasze studio jest wyposażone w zaawansowane urządzenia rejestrujące obraz w rozdzielczośći 4K, slowmotion oraz platformę latającą dzięki której mamy możliwość nagrywać niesamowite ujęcia z perspektywy "lotu ptaka".</p>
+                    <p>Zapraszamy do współpracy.</p>
+                    <div class="video-links">
+                        <a class="big-txt blue" href="#production">realizacje</a>
+                        <img src="img/gift-icon-dark.png" alt="Gift icon">
+                    </div>
+                </div>
+            </section>
+            </section>
+        </div>
+    </section>
+    <section id="production" class="container">
+        <div class="row">
+            <div class="prod-title button-group filter-button-group col-md-12">
+                <span id="menu-line"></span>
+                <h1 class="big-txt blue">realizacje</h1>
+                <ul id="prod-list">
+                    <li class="active"><button class="button blue" data-filter="*">Wszystkie</button></li>
+                    <li><button class="button blue" data-filter=".art">Grafika</button></li>
+                    <li><button class="button blue" data-filter=".video">Video</button></li>
+                    <li><button class="button blue" data-filter=".photo">Zdjęcia</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="prod-wrapper col-md-12">
+                <div class="wrapper-list grid">
+                    <div class="grid-item prod-box all art art-1">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all video video-1">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all photo photo-1">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all art art-2">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all video video-2">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all photo photo-2">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all art art-3">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all video video-3">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all photo photo-3">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all art art-4">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all art art-5">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="grid-item prod-box all photo photo-4">
+                        <div class="prod-hover big-txt show hide">
+                            <span>cutline</span>
+                            <h2>promovideo z rajdów</h2>
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container">
+            <div class="clients-title col-md-12">
+            <h1 class="big-txt blue">zaufali nam</h1>
+            <div class="logotypes col-md-12">
+                <div class="clinets-grid">
+                    <img src="img/clients/helios.png" alt="Helios logotype" />
+                    <img src="img/clients/blue-diamond.png" alt="Blue Diamond logotype" />
+                    <img src="img/clients/infoloty.png" alt="Infoloty logotype" />
+                    <img src="img/clients/sekret-urody.png" alt="Sekret Urody logotype" />
+                </div>
+                <div class="clinets-grid">
+                    <img src="img/clients/specjal.png" alt="Specjał logotype" />
+                    <img src="img/clients/dr-belter.png" alt="Dr. Belter logotype" />
+                    <img src="img/clients/sylveco.png" alt="Sylveco logotype" />
+                    <img src="img/clients/fabryka-cen.png" alt="Fabryka Cen logotype" />
+                </div>
+            </div>
+            <p class="big-txt blue">skontaktuj się z nami</p>
+            <button class="arrow-button">
+                <a href="#contact"><span class="arrow-left"></span></a>
+                <a href="#contact"><span class="arrow-right"></span></a>
+            </button>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <section class="contact-main col-md-12">
+            <section id="google-maps" class="col-md-6">
+                <div id="map"></div>
+            </section>
+            <section class="contact-form col-md-6">
+                <div class="form-row col-md-7 col-sm-9">
+                    <ul class="contact-list">
+                        <li>
+                            <h6>NOXX Studio</h6>
+                            <p>ul. Staszica 25/26</p>
+                            <p>35-051 Rzeszów</p>
+                        </li>
+                        <li>
+                            <h6>Projekty graficzne</h6>
+                            <p>+48 669 422 670</p>
+                            <a href="mailto:projekty@noxx.pl?Subject=Pytanie%20o%20projekt" target="_top">projekty@noxx.pl</a>
+                        </li>
+                        <li>
+                            <h6>Filmy video</h6>
+                            <p>+48 795 870 718</p>
+                            <a href="mailto:video@noxx.pl?Subject=Pytanie%20o%20film" target="_top">video@noxx.pl</a>
+                        </li>
+                    </ul>
+                    <h4 class="big-txt">formularz</h4>
+                    <form class="cont-form" action="">
+                        <input type="text" placeholder="Imię i nazwisko"></input>
+                        <input type="mail" placeholder="E-mail"></input>
+                        <div class="form">
+                            <textarea>Treść...</textarea>
+                            <button><img src="img/envelope-icon.png" height="25" width="41" alt="Envelope icon"/></button>
+                        </div>
+                    </form>
+                    <h5 class="copy">Copyright &#169; 2016 by</h5>
+                    <img src="img/noxx-contact-logo.png" height="23" width="94" alt="Noxx logotype small"/>
+                </div>
+            </section>
+            </section>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHqpq3Ih_n3RP1gznlsmQEn6e8kpiYtsc"></script>
+    <script src="vendors/jquery-1.11.2.min.js"></script>
+    <script src="vendors/isotope.pkgd.min.js"></script>
+    <script src="scripts/modules/menu-show.js"></script>
+    <script src="scripts/modules/isotope.js"></script>
+    <script src="scripts/modules/production-line.js"></script>
+    <script src="scripts/modules/smooth-scroll.js"></script>
+    <script src="scripts/modules/production-hover.js"></script>
+    <script src="scripts/modules/google-maps.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
