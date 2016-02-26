@@ -40,6 +40,7 @@ header {
     background: url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
+    /*background-attachment: fixed;*/
 }
 
 .big-txt {
@@ -307,15 +308,17 @@ header {
 /* END OF NAVIGATION */
 
 .main-banner img {
-    padding: 255px 0 100px 0;
+    margin: 255px 0 100px 0;
     max-width: 100%;
+    transition: margin 0.2s ease;
 }
 
 .main-banner p {
     display: block;
     font-weight: 700;
     font-size: 16px;
-    padding: 0 0 40px 0;
+    margin: 0 0 50px 0;
+    transition: margin 0.2s ease;
 }
 
 .arrow-button {
@@ -324,6 +327,8 @@ header {
     background-color: transparent;
     border: none;
     outline: none;
+    -moz-animation: bounceArrow 2s infinite;
+    -webkit-animation: bounceArrow 2s infinite;
     animation: bounceArrow 2s infinite;
 }
 
@@ -451,7 +456,7 @@ header {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    top: 10px;
+    top: 2px;
 }
 
 .main-graphics .image-wrap {
@@ -462,7 +467,7 @@ header {
 .main-video h1 {
     font-size: 36px;
     font-family: 'Montserrat', arial;
-    margin: 170px 0 40px 0;
+    margin: 160px 0 40px 0;
 }
 
 .graphics-links {
@@ -510,6 +515,7 @@ header {
 .main-video p {
     color: #909090;
     font-size: 18px;
+    margin: 22px 0;
 }
 
 .main-video .image-wrap {
@@ -596,7 +602,6 @@ header {
 }
 
 
-
 /* END OF PROD. TITLE / LIST */
 
 
@@ -612,16 +617,11 @@ header {
     transition: height 0.1s ease;
 }
 
-
 .prod-box {
     display: inline-block;
     min-width: 320px;
     height: 180px;
     margin: 30px 15px 0;
-}
-
-.grid-item {
-    width: 320px;
 }
 
 .prod-hover {
@@ -653,7 +653,7 @@ header {
     opacity: 1;
 }
 
- .prod-hover i {
+.prod-hover i {
     position: absolute;
     bottom: 20px;
     left: 30px;
@@ -672,6 +672,7 @@ header {
     opacity: 0;
     transition: all 0.2s ease-out;
 }
+
 
 /* ART */
 
@@ -912,3 +913,229 @@ header {
 
 
 /* ----- END OF CONTACT ----- */
+
+
+/* CUSTOM RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+    .main-banner {
+        max-height: 471px;
+    }
+    .main-banner img {
+        margin: 80px 0 50px 0;
+        width: 90%;
+    }
+    .main-banner p {
+        margin: 0;
+    }
+    .navigation {
+        min-height: 472px;
+        max-height: 472px;
+        padding: 10px 7% 40px 0;
+    }
+    .navigation .menu-list li:nth-child(5) {
+        margin-bottom: 0px;
+    }
+    .navigation .contact-list {
+        display: none;
+    }
+    .navigation .social-list {
+        right: 8%;
+        bottom: 20px;
+    }
+    .navigation .social-list li {
+        margin: 15px 15px 0 15px;
+    }
+    .main-graphics,
+    .main-video {
+        padding: 65px 7% 65px 7%;
+    }
+    .main-graphics h1,
+    .main-video h1 {
+        font-size: 28px;
+        margin: 122px 0 40px 0;
+    }
+    .image-wrap {
+        top: -18px;
+    }
+    .main-graphics .col-xs-12,
+    .main-video .col-xs-12 {
+        padding: 0;
+    }
+    .main-video .image-wrap {
+        left: 0;
+    }
+    .main-graphics .image-wrap {
+        right: 0;
+    }
+    .prod-title ul li {
+        padding: 15px 20px;
+        display: block;
+        margin: 10px 0;
+        border: 1px solid #22265b;
+    }
+    #menu-line {
+        display: none;
+    }
+    .prod-title ul li button {
+        font-size: 20px;
+    }
+    .prod-box,
+    .prod-hover {
+        display: block;
+        width: 100%;
+        min-width: 20px;
+        height: 160px;
+    }
+    .prod-box {
+        margin: 10px 0;
+    }
+    .show {
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    }
+    .clients-title h1 {
+        margin: 65px 0 100px 0;
+    }
+    .clinets-grid:last-child {
+        margin-bottom: 100px;
+    }
+    #google-maps {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 766px) {
+    .main-banner img {
+        margin: 80px 0 50px 0;
+        width: 60%;
+    }
+    .main-banner p {
+        margin: 0 0 10px 0;
+    }
+    .navigation {
+        min-height: 549px;
+        max-height: 549px;
+        padding: 40px 15% 40px 0;
+    }
+    .navigation .contact-list {
+        display: none;
+    }
+    .navigation .social-list {
+        right: 15%;
+    }
+    .main-graphics,
+    .main-video {
+        padding: 65px 4% 65px 4%;
+    }
+    .main-graphics h1,
+    .main-video h1 {
+        font-size: 33px;
+        margin: 122px 0 40px 0;
+    }
+    .image-wrap {
+        top: -18px;
+    }
+    .main-graphics,
+    .main-video {
+        min-height: auto;
+        max-height: auto;
+        height: auto;
+    }
+    .prod-title ul li {
+        padding: 25px 20px;
+    }
+    .prod-box {
+        display: block;
+        width: 100%;
+        height: 180px;
+        margin: 10px 0;
+    }
+    .prod-box,
+    .prod-hover {
+        width: 100%;
+        min-width: 20px;
+        height: 160px;
+    }
+    .show {
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    }
+    .clients-title h1 {
+        margin: 65px 0 100px 0;
+    }
+    .clinets-grid:last-child {
+        margin-bottom: 100px;
+    }
+    #google-maps {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 976px) {
+    .navigation .social-list li {
+        margin: 15px 24px 0 24px;
+    }
+    .col-sm-offset-1 {
+        margin-left: 1.333333%;
+    }
+    .col-md-8 {
+        width: 96.666667%;
+    }
+    .main-graphics h1,
+    .main-video h1 {
+        font-size: 30px;
+        margin: 134px 0 40px 0;
+    }
+    .image-wrap {
+        top: -13px;
+    }
+    .prod-title ul li {
+        padding: 25px 60px;
+    }
+    .prod-box,
+    .prod-hover {
+        min-width: 290px;
+        height: 160px;
+    }
+    .show {
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    }
+    #google-maps {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 977px) and (max-width: 1095px) {
+    .col-md-offset-4 {
+        margin-left: 10.33333333%;
+    }
+    .col-md-8 {
+        width: 89.666667%;
+    }
+    .main-video .col-md-8 {
+        width: 92.799999%;
+    }
+    .prod-title ul li {
+        padding: 25px 80px;
+    }
+    .show {
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    }
+    .prod-box,
+    .prod-hover {
+        min-width: 290px;
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 1096px) and (max-width: 1315px) {
+    .col-md-offset-4 {
+        margin-left: 20.33333333%;
+    }
+    .col-md-8 {
+        width: 79.666667%;
+    }
+}
