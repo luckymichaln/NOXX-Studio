@@ -1,0 +1,162 @@
+.hamburger
+    position: absolute
+    top: 65px
+    left: 65px
+    z-index: 20
+    border: none
+    outline: none
+
+    span
+        display: block
+        position: relative
+        width: 26px
+        height: 2px
+        margin: 5px
+        background-color: $color-hamburger
+        transition: all .2s ease
+
+
+        &:nth-child(1),
+        &:nth-child(3)
+            top: 0
+            left: 0
+            transition: all .3s ease
+
+        &:nth-child(1).is-active
+            +rotate(45deg)
+            top: 7px
+            left: 0
+
+        &:nth-child(2).is-active
+            width: 0%
+            opacity: 0
+
+        &:nth-child(3).is-active
+            +rotate(-45deg)
+            top: -7px
+            left: 0
+
+.navigation
+    +translate(-100%)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    height: 813px
+    padding: 40px 7% 40px 0
+    background: $color-gradient-start
+    transition: translate .3s cubic-bezier(1, .05, .5, .9)
+
+    &.slide-menu-show
+        +translate(0%)
+        opacity: 1
+
+    .menu-list li
+        position: relative
+        left: 20px
+        opacity: 0
+        text-align: right
+        transition: all .2s linear
+
+        a
+            margin: 0 0 40px 0
+            font: 700 26px/55px $font-uppercase
+            transition: color .2s ease
+
+            &:hover
+                color: $color-nav-hover
+
+            &:active,
+            &:focus
+                color: $color-white
+
+        &.list-show
+            opacity: 1
+            left: 0
+
+        &:nth-child(5)
+            margin-bottom: 30px
+
+        &:last-child
+
+            > a
+                line-height: 90px
+                color: $color-white
+
+            &::after,
+            &::before
+                content: ''
+                position: absolute
+                left: -4px
+                display: block
+                width: 117%
+                height: 1px
+                background-color: $color-nav-lines
+
+    .contact-list
+        position: relative
+        left: 20px
+        margin-bottom: 80px
+        opacity: 0
+        transition: all .2s linear
+
+        a,
+        h6,
+        p
+            margin: 0
+            font-size: 16px
+            line-height: 17px
+            color: $color-nav-hover
+
+        a
+            text-decoration: underline
+
+        li
+            text-align: right
+
+            &:first-child > h6
+                margin-top: 40px
+                font-weight: 700
+
+            &::after
+                display: none!important
+
+        h6
+            margin: 30px 0 0 0
+            color: $color-white
+
+        &.list-show
+            opacity: 1
+            left: 0
+
+    .social-list
+        position: absolute
+        right: 14%
+        bottom: 40px
+        padding: 0
+        opacity: 0
+        transition: opacity 1s ease-out
+
+        li
+            margin: 15px 30px 0 30px
+            float: left
+
+            &:last-child
+                margin-right: 0
+
+            &::after
+                display: none!important
+
+        i
+            font-size: 23px
+            text-align: right
+            transition: color .2s ease
+
+            &:hover
+                color: $color-white
+
+            &::after
+                display: none!important
+
+        &.list-fade-show
+            opacity: 1
