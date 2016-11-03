@@ -45,4 +45,4 @@ Thumbs.db
 ############
 styles/.sass-cache
 .sass-cache
-.map.css
+*.css.map
