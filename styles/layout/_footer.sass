@@ -1,0 +1,103 @@
+.contact-main,
+#google-maps,
+#map
+    padding: 0
+
+#map
+    height: 843px
+
+.form-row
+    height: 843px
+    padding: 20px 40px
+    background: $color-gradient-start
+    +linear-gradient($color-gradient-start, $color-gradient-end)
+
+    img:last-child
+        display: inline-block
+        position: relative
+        bottom: -4px
+
+    h4
+        margin-top: 50px
+        font-size: 26px
+
+    .contact-list li
+        text-align: left
+
+        p
+            color: $color-white
+
+        a
+            text-decoration: none
+
+.contact-form
+    height: 843px
+    padding: 0
+    background: url(../img/contact-bg2.jpg) center right no-repeat
+    background-size: contain
+
+    .contact-list
+        a,
+        h6,
+        p
+            margin: 0
+            font-size: 16px
+            line-height: 17px
+            color: $color-nav-hover
+
+        a
+            text-decoration: underline
+
+        li
+            text-align: left
+
+            &:first-child > h6
+                margin-top: 40px
+                font-weight: 700
+
+            &::after
+                display: none!important
+
+        h6
+            margin: 30px 0 0 0
+            color: $color-white
+
+
+.cont-form
+    button
+        border: none
+        background-color: transparent
+
+        .img-submit
+            position: absolute
+            bottom: 174px
+            right: 50px
+            z-index: 2
+
+    textarea
+        width: 100%
+        min-width: 120px
+        height: 185px
+        padding: 10px 25px
+        border: 1px solid $color-contact-border
+        color: $color-contact-gray
+        background-color: transparent
+        transition: all 0.3s ease
+
+    input
+        display: block
+        width: 100%
+        min-width: 120px
+        padding: 10px 25px
+        border: 1px solid $color-contact-border
+        margin: 20px 0
+        background-color: transparent
+        transition: all 0.3s ease
+
+    input:focus,
+    textarea:focus
+        border: 1px solid $color-white
+
+.copy
+    display: inline-block
+    margin: 75px 10px 0 0

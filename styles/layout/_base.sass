@@ -81,6 +81,7 @@ body
     top: 2px
     width: 100px
     height: 100px
+    border: 1px solid $color-white
     border-radius: 50%
 
     img
@@ -110,13 +111,12 @@ body
 .main-graphics,
 .main-video
     h1
-
         margin: 160px 0 40px 0
         font:
             family: $font-uppercase
             size: 36px
 
-.graphic-links
+.graphics-links
     position: relative
     bottom: -14px
 
@@ -268,9 +268,9 @@ body
                     transition: all .2s ease-out
 
 .prod-wrapper
-    &[class*='art'],
-    &[class*='photo'],
-    &[class*='video']
+    &[class~='art-'],
+    &[class~='photo-'],
+    &[class~='video-']
         background-size: cover
 
 .prod-wrapper .art-1
@@ -336,81 +336,5 @@ body
     .arrow-right
         border-bottom: 1px solid $color-accent
 
-    &:last-child
+    .clients-grid:last-child
         margin-bottom: 170px
-
-.contact-main,
-#google-maps,
-#map
-    padding: 0
-
-#map
-    height: 843px
-
-.form-row
-    +linear-gradient($color-gradient-start, $color-gradient-end)
-    height: 843px
-    padding: 20px 40px
-    background: $color-gradient-start
-
-    img:last-child
-        display: inline-block
-        position: relative
-        bottom: 2px
-
-    h4
-        display: block
-        width: 100%
-        min-width: 120px
-        padding: 10px 25px
-        border: 1px solid $color-contact-border
-        margin: 20px 0
-        background-color: transparent
-        transition: all .3s ease
-
-        .contact-form
-            height: 843px
-            padding: 0
-            background: url(../img/contact-bg2.jpg) center right no-repeat
-            background-size: contain
-
-            button
-                position: absolute
-                bottom: 174px
-                right: 50px
-                z-index: 2
-                border: none
-                background-color: transparent
-
-            textarea
-                width: 100%
-                min-width: 120px
-                height: 185px
-                padding: 10px 25px
-                border: 1px solid $color-contact-border
-                color: $color-contact-gray
-                background-color: transparent
-                transition: all 0.3s ease
-
-            input
-                display: block
-                width: 100%
-                min-width: 120px
-                padding: 10px 25px
-                border: 1px solid $color-contact-border
-                margin: 20px 0
-                background-color: transparent
-                transition: all 0.3s ease
-
-            input:focus,
-            textarea:focus
-                border: 1px solid $color-white
-
-    .contact-list li
-        text-align: left
-
-        p
-            color: $color-white
-
-        a
-            text-decoration: none
